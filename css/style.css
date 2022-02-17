@@ -1,0 +1,27 @@
+body {
+    counter-reset: tasks;
+}
+
+.task-box {
+    position: relative;
+    /* background-color: #eee !important; */
+    overflow: visible;
+    padding-left: 30px;
+}
+
+.task-box::before {
+    counter-increment: tasks;
+    content: counter(tasks);
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(50%,-50%);
+    color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

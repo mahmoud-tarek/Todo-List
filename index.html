@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Todo List</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Todo List Start -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 offset-lg-2">
+
+                <div>
+
+                    <div role="form" class="my-3 p-3 rounded bg-secondary bg-opacity-10 bg-gradient">
+                        <h2 class="text-center text-capitalize mb-3">task list</h2>
+                        <h4 id="subTitle" class="d-none text-center text-info text-capitalize mb-2"></h4>
+                        <div class="from-group">
+                            <input id="taskInput" class="form-control mb-3" type="text">
+                            <button id="taskBtn" class="btn btn-primary w-100 text-capitalize">add
+                                task</button>
+                        </div>
+                    </div>
+
+                    <div class="my-3 rounded d-inline-block w-100 p-3 bg-secondary bg-opacity-10 bg-gradient">
+
+                        <h3 class="text-center text-capitalize mb-3">tasks</h3>
+
+                        <ul id="taskItems" class="list-unstyled">
+                        </ul>
+
+                        <button id="deleteAll" class="btn btn-danger w-100 text-capitalize">delete all</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Todo List End -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/template.js"></script>
+</body>
+
+</html>
